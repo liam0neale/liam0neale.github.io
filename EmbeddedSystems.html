@@ -30,6 +30,11 @@
 							<section id="content" class="main">
 								<button id="modal01_bttn">First Program On Arduino</button>
 								<button id="modal02_bttn">Flash RGB LED</button>
+								<button id="modal03_bttn">Using Heat Sensor</button>
+								<button id="modal04_bttn">Buzzers</button>
+								<button id="modal05_bttn">Hour Glass</button>
+								<button id="modal06_bttn">Simple Motor</button>
+								<button id="modal07_bttn">Simple Crystal Display Game</button>
 
 								<!-- The Modal -->
 								<div id="modal01" class="modal">
@@ -52,13 +57,62 @@
 										<video src="Videos/Arduino/RGBLED.mp4" width="800" height="600" type="video/mp4" muted controls></video>
 									</div>
 								</div>
-								
+								<!-- The Modal -->
+								<div id="modal03" class="modal">
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span id="span03" class="close">&times;</span>
+										<p>Temperature Warning</p>
+										<img src="images/EmbeddedSystems/HeatSensor01.PNG"></img>
+										<img src="images/EmbeddedSystems/HeatSensor02.PNG"></img>
+										<video src="Videos/Arduino/TemperatureCheck.mp4" width="800" height="600" type="video/mp4" muted controls></video>
+									</div>
+								</div>
+								<div id="modal04" class="modal">
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span id="span04" class="close">&times;</span>
+										<p>Using Buzzers</p>
+										<img src="images/EmbeddedSystems/UsingBuzzer01.PNG"></img>
+										<img src="images/EmbeddedSystems/UsingBuzzer02.PNG"></img>
+										<video src="Videos/Arduino/Buzzer.mp4" width="800" height="600" type="video/mp4" muted controls></video>
+										<p>Simple Keboard</p>
+										<img src="images/EmbeddedSystems/Keyboard.PNG"></img>
+										<video src="Videos/Arduino/keyboard.mp4" width="800" height="600" type="video/mp4" muted controls></video>
+									</div>
+								</div>
+								<div id="modal05" class="modal">
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span id="span05" class="close">&times;</span>
+										<p>Hour Glass</p>
+										<img src="images/EmbeddedSystems/HourGlass01.PNG"></img>
+										<img src="images/EmbeddedSystems/HourGlass02.PNG"></img>
+										<img src="images/EmbeddedSystems/HourGlass03.PNG"></img>
+										<video src="Videos/Arduino/Timer.mp4" width="800" height="600" type="video/mp4" muted controls></video>
+									</div>
+								</div>
+								<div id="modal06" class="modal">
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span id="span06" class="close">&times;</span>
+										<p>Simple Motor</p>
+										<img src="images/EmbeddedSystems/FirstMotor.PNG"></img>
+										<video src="Videos/Arduino/Motor.mp4" width="800" height="600" type="video/mp4" muted controls></video>
+									</div>
+								</div>
+								<div id="modal07" class="modal">
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span id="span07" class="close">&times;</span>
+										<p>Crystal Display</p>
+										<img src="images/EmbeddedSystems/FirstLiquidDisplay01.PNG"></img>
+										<img src="images/EmbeddedSystems/FirstLiquidDisplay02.PNG"></img>
+										<video src="Videos/Arduino/CrystalDisplay8Ball.mp4" width="800" height="600" type="video/mp4" muted controls></video>
+									</div>
+								</div>
 							</section>
-
 					</div>
-
-			
-
 			</div>
 
 		<!-- Scripts -->
@@ -113,14 +167,29 @@
 				// Get the modal
 				var modal01 = document.getElementById("modal01");
 				var modal02 = document.getElementById("modal02");
+				var modal03 = document.getElementById("modal03");
+				var modal04 = document.getElementById("modal04");
+				var modal05 = document.getElementById("modal05");
+				var modal06 = document.getElementById("modal06");
+				var modal07 = document.getElementById("modal07");
 
 				// Get the button that opens the modal
 				var modalBttn01 = document.getElementById("modal01_bttn");
 				var modalBttn02 = document.getElementById("modal02_bttn");
+				var modalBttn03 = document.getElementById("modal03_bttn");
+				var modalBttn04 = document.getElementById("modal04_bttn");
+				var modalBttn05 = document.getElementById("modal05_bttn");
+				var modalBttn06 = document.getElementById("modal06_bttn");
+				var modalBttn07 = document.getElementById("modal07_bttn");
 
 				// Get the <span> element that closes the modal
 				var span01 = document.getElementById("span01");
 				var span02 = document.getElementById("span02");
+				var span03 = document.getElementById("span03");
+				var span04 = document.getElementById("span04");
+				var span05 = document.getElementById("span05");
+				var span06 = document.getElementById("span06");
+				var span07 = document.getElementById("span07");
 
 				// When the user clicks on the button, open the modal
 				modalBttn01.onclick = function() {
@@ -129,6 +198,21 @@
 				modalBttn02.onclick = function() {
 				modal02.style.display = "block";
 				}
+				modalBttn03.onclick = function() {
+				modal03.style.display = "block";
+				}
+				modalBttn04.onclick = function() {
+				modal04.style.display = "block";
+				}
+				modalBttn05.onclick = function() {
+				modal05.style.display = "block";
+				}
+				modalBttn06.onclick = function() {
+				modal06.style.display = "block";
+				}
+				modalBttn07.onclick = function() {
+				modal07.style.display = "block";
+				}
 
 				// When the user clicks on <span> (x), close the modal
 				span01.onclick = function() {
@@ -136,6 +220,21 @@
 				}
 				span02.onclick = function() {
 					modal02.style.display = "none";
+				}
+				span03.onclick = function() {
+					modal03.style.display = "none";
+				}
+				span04.onclick = function() {
+					modal04.style.display = "none";
+				}
+				span05.onclick = function() {
+					modal05.style.display = "none";
+				}
+				span06.onclick = function() {
+					modal06.style.display = "none";
+				}
+				span07.onclick = function() {
+					modal07.style.display = "none";
 				}
 
 				// When the user clicks anywhere outside of the modal, close it
