@@ -29,9 +29,11 @@
 							<section id="content" class="main">
                                 <h3>Dissertation</h3>
                                 <section>
-                                    <h3>Log</h3>
+                                    <h4>Logs</h4>
                                     <button id="modal01_bttn">Sprint 1</button>
                                     <button id="modal02_bttn">Sprint 2</button>
+                                    <button id="modal03_bttn">Sprint 3</button>
+                                    <button id="modal04_bttn">Sprint 4</button>
                                 </section>
                                 
                             </section>
@@ -97,6 +99,77 @@
                                     </table>
                                 </div>
                             </div>
+
+                            <div id="modal03" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span03" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 3</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1/11/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>What software/hardware do i need</li>
+                                                    <li>Decide what the end project is</li>
+                                                  </ul>
+                                            </td>
+                                            <td>
+                                                I will be using a graphics API and would have to be DirectX 12 or Vulkan as these are the only two
+                                                which support ray tracing. Not all GPUs support raytracing but mine is a Nvidea car and does support 
+                                                so development will be done on my own machine. 
+
+                                                The end project will contain a basic scene with at least one light source. I will need to calcualte the
+                                                lighting in the scene with the ReSTIR algorithm.
+                                            </td>
+                                            <td>What do i propose</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <div id="modal04" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span04" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 4</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>8/11/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>What software/hardware do i need</li>
+                                                    <li>Decide what the end project is</li>
+                                                  </ul>
+                                            </td>
+                                            <td>
+                                                I will be using a graphics API and would have to be DirectX 12 or Vulkan as these are the only two
+                                                which support ray tracing. Not all GPUs support raytracing but mine is a Nvidea car and does support 
+                                                so development will be done on my own machine. 
+
+                                                The end project will contain a basic scene with at least one light source. I will need to calcualte the
+                                                lighting in the scene with the ReSTIR algorithm.
+                                            </td>
+                                            <td>What do i propose</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
 					</div>
 
 				
@@ -171,23 +244,35 @@
 				// Get the modal
 				var modal01 = document.getElementById("modal01");
                 var modal02 = document.getElementById("modal02");
+                var modal03 = document.getElementById("modal03");
+                var modal04 = document.getElementById("modal04");
 				
 
 				// Get the button that opens the modal
 				var modalBttn01 = document.getElementById("modal01_bttn");
                 var modalBttn02 = document.getElementById("modal02_bttn");
+                var modalBttn03 = document.getElementById("modal03_bttn");
+                var modalBttn04 = document.getElementById("modal04_bttn");
 				
 
 				// Get the <span> element that closes the modal
 				var span01 = document.getElementById("span01");
                 var span02 = document.getElementById("span02");
-				
+				var span03 = document.getElementById("span03");
+                var span04 = document.getElementById("span04");
+
 				// When the user clicks on the button, open the modal
 				modalBttn01.onclick = function() {
 				modal01.style.display = "block";
 				}
                 modalBttn02.onclick = function() {
 				modal02.style.display = "block";
+				}
+                modalBttn03.onclick = function() {
+				modal03.style.display = "block";
+				}
+                modalBttn04.onclick = function() {
+				modal04.style.display = "block";
 				}
 				
 
@@ -197,6 +282,12 @@
 				}
                 span02.onclick = function() {
 					modal02.style.display = "none";
+				}
+                span03.onclick = function() {
+					modal03.style.display = "none";
+				}
+                span04.onclick = function() {
+					modal04.style.display = "none";
 				}
 				
 
