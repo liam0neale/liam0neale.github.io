@@ -30,7 +30,8 @@
                                 <h3>Dissertation</h3>
                                 <section>
                                     <h3>Log</h3>
-                                    <button id="modal01_bttn">Week 1</button>
+                                    <button id="modal01_bttn">Sprint 1</button>
+                                    <button id="modal02_bttn">Sprint 2</button>
                                 </section>
                                 
                             </section>
@@ -40,7 +41,7 @@
                                 <div class="modal-content">
                                     <span id="span01" class="close">&times;</span>
                                     <p>Student ID: 18014341</p>
-                                    <p>Title: Week 1</p>
+                                    <p>Title: Sprint 1</p>
                                     <table>
                                         <tr>
                                             <th>Date</th>
@@ -61,6 +62,37 @@
                                                 and it interested me. However i wanted to use a grpahics API to achieve this but was struggling to turn it into a project. 
                                             </td>
                                             <td>What area do i want to investigate of computer graphics</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="modal02" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span02" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 2</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>25/10/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Research into intersted area in computer graphics</li>
+                                                    <li>Think about proposal</li>
+                                                  </ul>
+                                            </td>
+                                            <td>GPU raytracing is a hot subject in computer graphics so i have decided to go down this line. With guidance from my supervisor
+                                                im going to use Monte Carlo intergration to calculate direct lighting (and indirect lighting as an extension) in a scene. The 
+                                                algorithm i will use is called ReSTIR by Nvidea. 
+                                            </td>
+                                            <td>What do i need to create this project</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -138,24 +170,33 @@
             <script>
 				// Get the modal
 				var modal01 = document.getElementById("modal01");
+                var modal02 = document.getElementById("modal02");
 				
 
 				// Get the button that opens the modal
 				var modalBttn01 = document.getElementById("modal01_bttn");
+                var modalBttn02 = document.getElementById("modal02_bttn");
 				
 
 				// Get the <span> element that closes the modal
 				var span01 = document.getElementById("span01");
+                var span02 = document.getElementById("span02");
 				
 				// When the user clicks on the button, open the modal
 				modalBttn01.onclick = function() {
 				modal01.style.display = "block";
+				}
+                modalBttn02.onclick = function() {
+				modal02.style.display = "block";
 				}
 				
 
 				// When the user clicks on <span> (x), close the modal
 				span01.onclick = function() {
 					modal01.style.display = "none";
+				}
+                span02.onclick = function() {
+					modal02.style.display = "none";
 				}
 				
 
