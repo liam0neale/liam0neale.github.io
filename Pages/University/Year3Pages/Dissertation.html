@@ -34,6 +34,8 @@
                                     <button id="modal02_bttn">Sprint 2</button>
                                     <button id="modal03_bttn">Sprint 3</button>
                                     <button id="modal04_bttn">Sprint 4</button>
+                                    <button id="modal05_bttn">Sprint 5</button>
+                                    <button id="modal06_bttn">Sprint 6</button>
                                 </section>
                                 
                             </section>
@@ -52,7 +54,7 @@
                                             <th>Questions</th>
                                         </tr>
                                         <tr>
-                                            <td>18/10/2021</td>
+                                            <td>11/10/2021</td>
                                             <td>
                                                 <ul>
                                                     <li>Define Idea</li>
@@ -83,7 +85,7 @@
                                             <th>Questions</th>
                                         </tr>
                                         <tr>
-                                            <td>25/10/2021</td>
+                                            <td>18/10/2021</td>
                                             <td>
                                                 <ul>
                                                     <li>Research into intersted area in computer graphics</li>
@@ -114,7 +116,7 @@
                                             <th>Questions</th>
                                         </tr>
                                         <tr>
-                                            <td>1/11/2021</td>
+                                            <td>25/10/2021</td>
                                             <td>
                                                 <ul>
                                                     <li>What software/hardware do i need</li>
@@ -149,7 +151,7 @@
                                             <th>Questions</th>
                                         </tr>
                                         <tr>
-                                            <td>8/11/2021</td>
+                                            <td>1/11/2021</td>
                                             <td>
                                                 <ul>
                                                     <li>Layout Proposal</li>
@@ -161,11 +163,70 @@
                                                 my proposal. This was so i could get the best understanding of the scope and design of my project. 
 
                                                 I have bullet pointed my proposal as well as have a much better understanding of how to generate lighting
-                                                using Monet Carlo with rays.
+                                                using Monet Carlo with rays. Will meet with supervior before turning into paragraphs to then hand in.
 
                                                 I will also use Directx 12 so i can think about programming
                                             </td>
                                             <td>Where to start with programming</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="modal05" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span05" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 5</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>8/11/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Carry on with research</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                I have been researching into what different techniques games/movies/engines use with generating
+                                                lighting using rays. 
+
+                                                I have also done research into setting up a directx 12 scene
+                                            </td>
+                                            <td>Where to start with programming</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="modal06" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span06" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 6</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>15/11/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Start programming</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                I have set up the directx 12 rasterizer pipeline. This includes...
+                                            </td>
+                                            <td>How to Draw Vertices</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -247,13 +308,16 @@
                 var modal02 = document.getElementById("modal02");
                 var modal03 = document.getElementById("modal03");
                 var modal04 = document.getElementById("modal04");
-				
+				var modal05 = document.getElementById("modal05");
+                var modal06 = document.getElementById("modal06");
 
 				// Get the button that opens the modal
 				var modalBttn01 = document.getElementById("modal01_bttn");
                 var modalBttn02 = document.getElementById("modal02_bttn");
                 var modalBttn03 = document.getElementById("modal03_bttn");
                 var modalBttn04 = document.getElementById("modal04_bttn");
+                var modalBttn05 = document.getElementById("modal05_bttn");
+                var modalBttn06 = document.getElementById("modal06_bttn");
 				
 
 				// Get the <span> element that closes the modal
@@ -261,6 +325,8 @@
                 var span02 = document.getElementById("span02");
 				var span03 = document.getElementById("span03");
                 var span04 = document.getElementById("span04");
+                var span05 = document.getElementById("span05");
+                var span06 = document.getElementById("span06");
 
 				// When the user clicks on the button, open the modal
 				modalBttn01.onclick = function() {
@@ -274,6 +340,12 @@
 				}
                 modalBttn04.onclick = function() {
 				modal04.style.display = "block";
+				}
+                modalBttn05.onclick = function() {
+				modal05.style.display = "block";
+				}
+                modalBttn06.onclick = function() {
+				modal06.style.display = "block";
 				}
 				
 
@@ -289,6 +361,12 @@
 				}
                 span04.onclick = function() {
 					modal04.style.display = "none";
+				}
+                span05.onclick = function() {
+					modal05.style.display = "none";
+				}
+                span06.onclick = function() {
+					modal06.style.display = "none";
 				}
 				
 
