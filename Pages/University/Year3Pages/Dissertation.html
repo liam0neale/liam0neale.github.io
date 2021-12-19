@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../  ../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Year 3</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+                                <h3>Dissertation</h3>
+                                <section>
+                                    <h3>Log</h3>
+                                    <button id="modal01_bttn">Week 1</button>
+                                </section>
+                                
+                            </section>
+
+                            <div id="modal01" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span01" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Week 1</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>18/10/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Define Idea</li>
+                                                    <li>Meet supervisor</li>
+                                                  </ul>
+                                            </td>
+                                            <td>After discussing with my supervisor i have decided to change my idea to something to do with computer graphics.
+                                                My original idea of combining generative game play with play back media quality came from my placement experience
+                                                and it interested me. However i wanted to use a grpahics API to achieve this but was struggling to turn it into a project. 
+                                            </td>
+                                            <td>What area do i want to investigate of computer graphics</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+					</div>
+
+				
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../../assets/js/browser.min.js"></script>
+			<script src="../../../assets/js/breakpoints.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+			<script>
+				var tanksVid = document.getElementById('TanksVideo');
+				function TanksVid()
+				{
+					if(tanksVid.currentTime == 0)
+						tanksVid.play();
+					else
+						tanksVid.pause();
+				}
+			</script>
+			<style>
+				.mylink {
+						color: blue;
+						background-color: transparent;
+						text-decoration: none;
+						}
+			</style>
+            <style>
+				/* The Modal (background) */
+			.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Content/Box */
+			.modal-content {
+			background-color: #fefefe;
+			margin: 15% auto; /* 15% from the top and centered */
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%; /* Could be more or less, depending on screen size */
+			}
+
+			/* The Close Button */
+			.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+			}
+			</style>
+            <script>
+				// Get the modal
+				var modal01 = document.getElementById("modal01");
+				
+
+				// Get the button that opens the modal
+				var modalBttn01 = document.getElementById("modal01_bttn");
+				
+
+				// Get the <span> element that closes the modal
+				var span01 = document.getElementById("span01");
+				
+				// When the user clicks on the button, open the modal
+				modalBttn01.onclick = function() {
+				modal01.style.display = "block";
+				}
+				
+
+				// When the user clicks on <span> (x), close the modal
+				span01.onclick = function() {
+					modal01.style.display = "none";
+				}
+				
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+				}
+
+			</script>
+	</body>
+</html>
