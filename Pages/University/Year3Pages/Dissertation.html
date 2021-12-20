@@ -36,6 +36,9 @@
                                     <button id="modal04_bttn">Sprint 4</button>
                                     <button id="modal05_bttn">Sprint 5</button>
                                     <button id="modal06_bttn">Sprint 6</button>
+                                    <button id="modal07_bttn">Sprint 7</button>
+                                    <button id="modal08_bttn">Sprint 8</button>
+                                    <button id="modal09_bttn">Sprint 9</button>
                                 </section>
                                 
                             </section>
@@ -231,6 +234,95 @@
                                     </table>
                                 </div>
                             </div>
+                            <div id="modal07" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span07" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 7</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>22/11/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>Start to Draw</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                I have a triangle on the screen
+                                            </td>
+                                            <td>How to Draw 3D</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="modal08" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span08" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 8</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>29/11/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>depth buffer</li>
+                                                    <li>render cube</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                I have a Cube on the screen
+
+                                                Started my research document
+                                            </td>
+                                            <td>Texture on screen</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="modal09" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span id="span09" class="close">&times;</span>
+                                    <p>Student ID: 18014341</p>
+                                    <p>Title: Sprint 9</p>
+                                    <table>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>To Do</th>
+                                            <th>Achieved</th>
+                                            <th>Questions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>06/12/2021</td>
+                                            <td>
+                                                <ul>
+                                                    <li>draw texture</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                I have a textued Cube
+                                            </td>
+                                            <td>Refactor</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
 
 					</div>
 
@@ -310,6 +402,9 @@
                 var modal04 = document.getElementById("modal04");
 				var modal05 = document.getElementById("modal05");
                 var modal06 = document.getElementById("modal06");
+                var modal07 = document.getElementById("modal07");
+                var modal08 = document.getElementById("modal08");
+                var modal09 = document.getElementById("modal09");
 
 				// Get the button that opens the modal
 				var modalBttn01 = document.getElementById("modal01_bttn");
@@ -318,7 +413,9 @@
                 var modalBttn04 = document.getElementById("modal04_bttn");
                 var modalBttn05 = document.getElementById("modal05_bttn");
                 var modalBttn06 = document.getElementById("modal06_bttn");
-				
+				var modalBttn07 = document.getElementById("modal07_bttn");
+                var modalBttn08 = document.getElementById("modal08_bttn");
+                var modalBttn09 = document.getElementById("modal09_bttn");
 
 				// Get the <span> element that closes the modal
 				var span01 = document.getElementById("span01");
@@ -327,6 +424,9 @@
                 var span04 = document.getElementById("span04");
                 var span05 = document.getElementById("span05");
                 var span06 = document.getElementById("span06");
+                var span07 = document.getElementById("span07");
+                var span08 = document.getElementById("span08");
+                var span09 = document.getElementById("span09");
 
 				// When the user clicks on the button, open the modal
 				modalBttn01.onclick = function() {
@@ -346,6 +446,15 @@
 				}
                 modalBttn06.onclick = function() {
 				modal06.style.display = "block";
+				}
+                modalBttn07.onclick = function() {
+				modal07.style.display = "block";
+				}
+                modalBttn08.onclick = function() {
+				modal08.style.display = "block";
+				}
+                modalBttn09.onclick = function() {
+				modal09.style.display = "block";
 				}
 				
 
@@ -368,7 +477,15 @@
                 span06.onclick = function() {
 					modal06.style.display = "none";
 				}
-				
+                span07.onclick = function() {
+					modal07.style.display = "none";
+				}
+                span08.onclick = function() {
+					modal08.style.display = "none";
+				}
+				span09.onclick = function() {
+					modal09.style.display = "none";
+				}
 
 				// When the user clicks anywhere outside of the modal, close it
 				window.onclick = function(event) {
