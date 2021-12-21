@@ -95,6 +95,17 @@
 										<p>As you can see there are multiple changes in the message. This is because every time the player makes a change it adds it to the message queue and once the players turn is finished the message queue is cleared and sent over the network. </p>
 										<p>On the Monday meeting this functionality was linked in with player movement and combat which allowed for a bit of play testing because you could move units around and it would update on the other players screen. A problem we came across was when we used two computers instead of just running two instances on local host was that some fire walls would block the messages even when you clicked the box to allow network features with the unity build. However, it did work when both firewalls were turned off, so this meant it was not a communication problem, so we decided leave it for now and test on local machines.</p>
 									</li>
+									<li>
+										<h3>Sprint 3</h3>
+										<p>With networking implemented and working with all the turn-based change types. I moved onto creating a server to hold leader boards. For simplicity I decided to go with python server and use the flask API which also had the ability to be stored on a free python server. I used basic get/post messages for getting and setting scores as all I needed was the player ID and their new score. Then I created an API inside C# so send these messages which contained functions:</p>
+										<ul>
+											<li>SetScore(string _id, string _score)</li>
+											<li>IncrementScore(stirng _id, string _amount)</li>
+											<li>DecrementScore(stirng _id, string _amount)</li>
+											<li>ClearScore(stirng _id, string _amount)</li>
+											<li>LoadLeaderBoards()</li>
+										</ul>
+									</li>
 								</ul>
 							</section>
 					</div>
