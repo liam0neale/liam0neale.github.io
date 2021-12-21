@@ -31,7 +31,72 @@
                                 <h4>Task</h4>
                                 <p>In a group of 5 we had to use a game genre radomiser and then create a game based on that. 
                                 </p>
-                            </section>
+
+								<h3>Weekly Reports</h3>
+								<ul>
+									<li>
+										<h3>Sprint 1</h3>
+										<p>Reflecting from last game jam (Assassin Creed demake) we decided we need to organise the order of what coding gets done and when it needs to be done by so we can track out work. Trello does give this to a certain point but at my placement I used a piece of software called Jira which had all the functionality of Trello plus more. One key part was to be able to create sprints and add tasks into them and once the sprint was finish which was weekly for us, we could reflect on the work and decide what to do with the work that didn’t get completed.</p>
+										<p>The next stage was to develop a game based on our random topic “A turn based strategy where you colonise ruins with cyborgs” and with this we decided to create a networked game where you take over ruins until the other player has none.</p>
+										<p>We split this up into sections such as:</p>
+										<ul>
+											<li>
+												Networking
+											</li>
+											<li>
+												Map generation
+											</li>
+											<li>
+												Combat
+											</li>
+											<li>
+												Turn based system
+											</li>
+											<li>
+												Leader board
+											</li>
+											<li>
+												Challengers
+											</li>
+											<li>
+												Sound
+											</li>
+											<li>
+												UI
+											</li>
+											<li>
+												Sprites
+											</li>
+										</ul>
+										<p>Then after we all got given our sections to code, we needed to create all the tasks needed to be done for the section to be completed. Then I created three sprints and we distributed them between the sprints making sure we all had enough work to do and that the work wasn’t too much to handle in three weeks. I was familiar with Jira, so I controlled the sprints and moved things around accordingly. On top of this we decided last game jam we didn’t meet up enough so every Monday before our Wednesday session we would meet and make sure everything was merged in to prevent cram coding and needing other people’s help when they are not free that evening.</p>
+										<p>I was the most confident with networking, so I choose to do this because I have some experience from my placement with TCP and Socket connections as well as creating a message format for these.</p>
+										<p>Scope was an important thing in this as creating a networking game is not quick so to keep the scope reasonable, we decided to have only two players with a Host/Client connection system. </p>
+										<p>My first sprint was to have a client connecting to a host through TCP and to be able to send basic string messages to each other. I completed this before Wednesday and there was map generation in as-well, so we had the host generate the map randomly and then send the data over in XML to the client. The client would then build the exact map which put us in a good spot for the first week.</p>
+										<p>One problem I found after a bit of testing is the map data would error occasionally because the “XML format was not complete”. Which means the message was not fully received before turning it back into XML format. The reason this was happening particular on the map message was because it was very long number of characters which meant it was split up into multiple packets. I wasn’t waiting for all packets received before turning back into XML.</p>
+									</li>
+									<li>
+										<h3>Sprint 2</h3>
+										<p>My second was to create the XML communication formatter for different commands:</p>
+										<ul>
+											<li>Health change</li>
+											<li>Unit position change</li>
+											<li>Ruin change owner ship</li>
+											<li>Unit type change</li>
+										</ul>
+										<p>The reason was this was my next priority was because the game loop depended on me to get the networking features in early to allow game testing which we fell short on in our last jam so decided it should be included in our Monday meetings.</p>
+										<p>The way I did this was create a static communication building script that had a method to build each of the message types above. The parameters were the any data that were essential for the other player to need e.g., unit ID or unit position. The format was typically…</p>
+										<textarea rows="6" cols="1" style="border:none;align-content: center;">
+<message>
+	<type =”position” id = “01” data = “x=1:z=2”>
+	<type=”health” id=”02” data=”75”>
+	<type=”ruin” id=”id” data=player1””>
+</message>
+										</textarea>
+										<p>As you can see there are multiple changes in the message. This is because every time the player makes a change it adds it to the message queue and once the players turn is finished the message queue is cleared and sent over the network. </p>
+										<p>On the Monday meeting this functionality was linked in with player movement and combat which allowed for a bit of play testing because you could move units around and it would update on the other players screen. A problem we came across was when we used two computers instead of just running two instances on local host was that some fire walls would block the messages even when you clicked the box to allow network features with the unity build. However, it did work when both firewalls were turned off, so this meant it was not a communication problem, so we decided leave it for now and test on local machines.</p>
+									</li>
+								</ul>
+							</section>
 					</div>
 
 				
